@@ -77,15 +77,16 @@
   .pov-turn{position:relative;margin-top:30px;padding-top:24px;max-width:640px;font-family:"Sora",sans-serif;font-weight:500;font-size:clamp(15px,1.9vw,18px);line-height:1.5;color:var(--ink);}
   .pov-turn::before{content:"";position:absolute;top:0;left:0;width:46px;height:2px;background:var(--heart);}
   /* ---- engagement flow (inside disclosure) ---- */
-  .flow{display:flex;align-items:flex-start;margin-top:24px;}
-  .step{flex:1;text-align:center;position:relative;padding:0 6px;}
-  .step .num{width:30px;height:30px;border-radius:50%;border:1.5px solid var(--heart);color:var(--ink);font-family:"Sora",sans-serif;font-weight:600;font-size:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;background:var(--paper);position:relative;z-index:1;}
+  details.eng{max-width:900px;}
+  .flow{display:flex;align-items:flex-start;margin:34px auto 0;max-width:860px;}
+  .step{flex:1;text-align:center;position:relative;padding:0 8px;}
+  .step .num{width:42px;height:42px;border-radius:50%;border:1.5px solid var(--heart);color:var(--ink);font-family:"Sora",sans-serif;font-weight:600;font-size:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 13px;background:var(--paper);position:relative;z-index:1;}
   .step.filled .num{background:var(--heart);border-color:var(--heart);color:var(--paper);}
-  .step .conn{position:absolute;top:15px;left:60%;width:80%;height:1.5px;background:var(--line);z-index:0;}
-  .step .sn{font-family:"Sora",sans-serif;font-weight:600;font-size:12.5px;color:var(--ink);}
-  .step .sd{font-family:"Sora",sans-serif;font-weight:400;font-size:11px;color:var(--ink-soft);line-height:1.45;margin-top:5px;}
-  .bracket{display:flex;margin-top:12px;}
-  .bracket .b3{flex:3;text-align:center;border-top:1.5px solid var(--heart);padding-top:7px;font-family:"Sora",sans-serif;font-weight:600;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--heart);margin-right:8px;}
+  .step .conn{position:absolute;top:21px;left:62%;width:76%;height:1.5px;background:var(--line);z-index:0;}
+  .step .sn{font-family:"Sora",sans-serif;font-weight:600;font-size:14.5px;color:var(--ink);}
+  .step .sd{font-family:"Sora",sans-serif;font-weight:400;font-size:12px;color:var(--ink-soft);line-height:1.5;margin-top:6px;}
+  .bracket{display:flex;margin:14px auto 0;max-width:860px;}
+  .bracket .b3{flex:3;text-align:center;border-top:1.5px solid var(--heart);padding-top:7px;font-family:"Sora",sans-serif;font-weight:600;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--heart);margin-right:8px;}
   .bracket .b2{flex:2;}
   .constant{margin-top:22px;background:var(--heart-tint);border-left:3px solid var(--heart);padding:12px 16px;display:flex;gap:13px;align-items:baseline;}
   .constant .cl{font-family:"Sora",sans-serif;font-weight:600;font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--heart);white-space:nowrap;}
@@ -96,6 +97,9 @@
   .hold .hd{font-family:"Sora",sans-serif;font-size:11.5px;line-height:1.5;color:var(--ink-soft);margin-top:5px;}
   .pov-note{margin-top:20px;max-width:640px;font-family:"Sora",sans-serif;font-size:14.5px;line-height:1.7;color:var(--ink-soft);}
   .pov-note b{color:var(--ink);font-weight:600;}
+  .pov-link{display:inline-flex;align-items:center;gap:8px;margin-top:28px;font-family:"Sora",sans-serif;font-size:13.5px;font-weight:600;letter-spacing:.02em;color:var(--heart);text-decoration:none;border-bottom:1px solid var(--heart-soft);padding-bottom:3px;transition:gap .15s,color .15s;}
+  .pov-link:hover{gap:12px;color:var(--ink);}
+  .pov-link .ar{font-weight:700;}
 
   /* ---- details / progressive disclosure ---- */
   details{margin-top:26px;max-width:680px;border-top:1px solid var(--line);}
@@ -236,21 +240,8 @@
     <div class="wrap">
       <span class="eyebrow">The point of view</span>
       <p class="pov-lead" style="margin-top:14px;">The technology is ready. Most companies <em>aren't.</em></p>
-      <p class="pov-turn">Waiting doesn't work. Neither does trying a little of everything. Pick where to move, and move soon.</p>
-      <p class="pov-note"><b>This doesn't have to mean going big.</b> It means doing the thing that actually matters to your business — even if it's small, even if it's mostly to learn. It doesn't need a tidy payback number. It needs to matter.</p>
-      <p class="pov-note"><b>It will ask something of you.</b> New skills, and a new way of looking at your own business and the market you're in. That part doesn't come out of a box.</p>
-
-      <details>
-        <summary><span class="chev">&rsaquo;</span> Read the fuller point of view</summary>
-        <div class="disc">
-          <p><b>The winners won't be the companies that ran the most experiments.</b> They'll be the ones that treated this as a real change to how the business works, not a side project, and moved on their strengths while everyone else was still deciding. Almost every company is using AI now. Very few are making real money from it. That gap is where the next few years get decided.</p>
-          <p><b>The trap isn't the technology. It's how it gets bought.</b> The gains from everyday AI tools are real, and they feel like progress — which is exactly what makes the spending easy to start and hard to stop. Best case, you get what you paid for and you're no more different from your competitors than you were. The money goes out, everyone feels busier, and none of it reaches the bottom line.</p>
-          <p><b>Small counts.</b> The companies getting real value out of this chase fewer things, not more — and the first move is often a modest one: a single job done properly, start to finish, so you can watch it work and learn what it takes. Some of the best first moves are hard to put a number on. What matters isn't the size of it. It's whether it's pointed at something that genuinely matters to the business, and whether you see it through.</p>
-          <p><b>The question worth asking is what kind of business you run.</b> Is it really one repeatable task wearing a costume? Or is it built on judgment, relationships, and someone being accountable when it counts? The first kind gets replaced. The second kind, run well, comes out further ahead — and most established companies are the second kind without knowing how to press it.</p>
-          <p><b>This isn't something you can hand to everyone and hope.</b> Electricity took decades to change how factories ran. The PC took more than ten years. Both needed people who knew what they were doing. Your team can tell you what's broken better than anyone, so listen to them — but knowing what's broken isn't the same as knowing how to fix it. Buying AI off the shelf and pointing it at the work fails even at the best companies. Whether it holds up has little to do with which AI you bought, and everything to do with how the whole thing was built.</p>
-          <p><b>Somebody in your market is going to make this pay.</b> The only question is who. Our job is to make sure it's you — on purpose, and at a pace you set.</p>
-        </div>
-      </details>
+      <p class="pov-turn">Waiting doesn't work. Neither does trying a little of everything. Pick where to move, and move soon — even if the first move is small.</p>
+      <a class="pov-link" href="point-of-view.html">Read the full point of view <span class="ar">&rarr;</span></a>
     </div>
   </section>
 
@@ -286,10 +277,10 @@
         </div>
       </div>
 
-      <details>
+      <details class="eng">
         <summary><span class="chev">&rsaquo;</span> See how an engagement runs</summary>
         <div class="disc">
-          <p>Five steps, and it starts small. The first three are worth it on their own, whether or not you go further.</p>
+          <p style="text-align:center;max-width:560px;margin:0 auto;">Five steps, and it starts small. The first three are worth it on their own, whether or not you go further.</p>
 
           <div class="flow">
             <div class="step">
