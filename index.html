@@ -166,7 +166,9 @@
   .startbox .eyebrow{color:var(--heart-soft);}
   .startbox h3{font-family:"Newsreader",serif;font-weight:500;font-size:clamp(21px,2.6vw,27px);color:var(--paper-2);margin:8px 0 9px;}
   .startbox p{font-family:"Sora",sans-serif;font-size:13px;line-height:1.6;color:#C3C9C2;max-width:560px;}
-  .startbox .arrow{font-family:"Sora",sans-serif;font-weight:600;font-size:34px;color:var(--heart-soft);}
+  .startcta{flex:0 0 auto;display:inline-flex;align-items:center;gap:9px;background:var(--heart-soft);color:var(--ink);font-family:"Sora",sans-serif;font-weight:600;font-size:13.5px;letter-spacing:.02em;padding:13px 22px;border-radius:3px;text-decoration:none;transition:background .15s,transform .15s;}
+  .startcta:hover{background:#8FB3A2;transform:translateY(-1px);}
+  .startcta span{font-weight:700;}
 
   /* ---- Footer ---- */
   .foot{border-top:1px solid var(--line);}
@@ -174,6 +176,8 @@
   .foot .manifesto{font-family:"Newsreader",serif;font-style:italic;font-size:14px;color:var(--ink);}
   .foot .manifesto b{font-style:normal;font-family:"Sora",sans-serif;font-weight:700;font-size:12.5px;}
   .foot .contact{font-family:"Sora",sans-serif;font-size:11px;letter-spacing:.04em;color:var(--ink-faint);text-align:right;}
+  .foot .contact a{color:var(--heart);text-decoration:none;}
+  .foot .contact a:hover{color:var(--ink);}
 
   @media (max-width:760px){
     .wrap{padding:0 22px;}
@@ -219,7 +223,7 @@
         <a class="navlink" href="#pov">Point of view</a>
         <a class="navlink" href="#build">What we do</a>
         <a class="navlink" href="#founder">Who we are</a>
-        <a class="navcta" href="#start">Get in touch</a>
+        <a class="navcta" href="mailto:hello@evoak.co">Get in touch</a>
       </nav>
     </div>
   </header>
@@ -230,7 +234,7 @@
       <div class="hero-inner">
         <h1>We help mid-sized businesses <em>thrive</em> in the age of AI.</h1>
         <p class="lead">Draw out the strengths you have and build the ones you don't.</p>
-        <a class="cta" href="#start">Start with an audit <span class="ar">&rarr;</span></a>
+        <a class="cta" href="mailto:hello@evoak.co?subject=AI%20Opportunity%20Audit">Start with an audit <span class="ar">&rarr;</span></a>
       </div>
     </div>
   </main>
@@ -462,7 +466,7 @@
           <h3>An AI Opportunity Audit.</h3>
           <p>In a few weeks, you'll know where AI pays off in your business, what it's worth, and what to do first. Fixed fee, and it counts toward the work if you go ahead.</p>
         </div>
-        <div class="arrow">&rarr;</div>
+        <a class="startcta" href="mailto:hello@evoak.co?subject=AI%20Opportunity%20Audit">Get in touch <span>&rarr;</span></a>
       </div>
     </div>
   </section>
@@ -471,7 +475,7 @@
   <footer class="foot">
     <div class="wrap">
       <div class="manifesto"><b>Evoak Partners.</b> &nbsp;Modernize the work, keep the soul.</div>
-      <div class="contact">hello@evoak.co &nbsp;·&nbsp; evoak.co</div>
+      <div class="contact"><a href="mailto:hello@evoak.co">hello@evoak.co</a> &nbsp;·&nbsp; evoak.co</div>
     </div>
   </footer>
 
