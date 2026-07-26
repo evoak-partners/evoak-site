@@ -71,12 +71,13 @@
   .s-body{font-size:clamp(16px,1.9vw,18.5px);line-height:1.5;color:var(--ink-soft);margin-top:16px;max-width:600px;}
 
   /* ---- What we do for our clients ---- */
-  .gets{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:8px;}
-  .get{padding-top:8px;}
-  .get .ic{display:inline-block;line-height:0;color:var(--heart);margin-bottom:18px;}
-  .get .ic svg{width:36px;height:36px;display:block;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
-  .get h3{font-family:"Newsreader",serif;font-weight:500;font-size:clamp(20px,2.4vw,25px);line-height:1.22;color:var(--ink);min-height:2.44em;}
-  .get p{font-family:"Sora",sans-serif;font-weight:400;font-size:15px;line-height:1.62;color:var(--ink-soft);margin-top:13px;}
+  .gets{display:grid;grid-template-columns:repeat(3,1fr);gap:38px;margin-top:8px;}
+  .get{display:flex;gap:16px;align-items:flex-start;}
+  .get .ic{flex:0 0 auto;display:block;line-height:0;color:var(--heart);margin-top:2px;}
+  .get .ic svg{width:40px;height:40px;display:block;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+  .get .txt{flex:1;}
+  .get h3{font-family:"Newsreader",serif;font-weight:500;font-size:clamp(19px,2.1vw,22px);line-height:1.24;color:var(--ink);}
+  .get p{font-family:"Sora",sans-serif;font-weight:400;font-size:14.5px;line-height:1.6;color:var(--ink-soft);margin-top:10px;}
 
   /* ---- POV ---- */
   .pov .wrap{padding-top:72px;padding-bottom:74px;}
@@ -253,19 +254,25 @@
     <div class="wrap">
       <div class="gets">
         <div class="get">
-          <span class="ic"><svg width="36" height="36" viewBox="0 0 32 32"><circle cx="14" cy="14" r="8.5"/><line x1="20.5" y1="20.5" x2="27" y2="27"/></svg></span>
-          <h3>Make sense of AI.</h3>
-          <p>See what it actually means for your business — what's real, what's hype, and what's worth doing.</p>
+          <span class="ic"><svg width="40" height="40" viewBox="0 0 32 32"><circle cx="14" cy="14" r="8.5"/><line x1="20.5" y1="20.5" x2="27" y2="27"/></svg></span>
+          <div class="txt">
+            <h3>Make sense of AI.</h3>
+            <p>See what it actually means for your business — what's real, what's hype, and what's worth doing.</p>
+          </div>
         </div>
         <div class="get">
-          <span class="ic"><svg width="36" height="36" viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="5.5"/><circle cx="16" cy="16" r="1.6" fill="currentColor" stroke="none"/></svg></span>
-          <h3>Put it to work on what your business needs.</h3>
-          <p>Start from the problem you're solving, not the technology, and build to it — whatever the tech turns out to be.</p>
+          <span class="ic"><svg width="40" height="40" viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="5.5"/><circle cx="16" cy="16" r="1.6" fill="currentColor" stroke="none"/></svg></span>
+          <div class="txt">
+            <h3>Put it to work on what your business needs.</h3>
+            <p>Start from the problem you're solving, not the technology, and build to it — whatever the tech turns out to be.</p>
+          </div>
         </div>
         <div class="get">
-          <span class="ic"><svg width="36" height="36" viewBox="0 0 32 32"><line x1="5" y1="26" x2="27" y2="26"/><line x1="10" y1="26" x2="10" y2="20"/><line x1="16" y1="26" x2="16" y2="14"/><line x1="22" y1="26" x2="22" y2="8"/></svg></span>
-          <h3>Get it out of the demo and running for real.</h3>
-          <p>Past the pilot and into everyday use — at full scale, safely and consistently, holding up when you depend on it.</p>
+          <span class="ic"><svg width="40" height="40" viewBox="0 0 32 32"><line x1="5" y1="26" x2="27" y2="26"/><line x1="10" y1="26" x2="10" y2="20"/><line x1="16" y1="26" x2="16" y2="14"/><line x1="22" y1="26" x2="22" y2="8"/></svg></span>
+          <div class="txt">
+            <h3>Get it out of the demo and running for real.</h3>
+            <p>Past the pilot and into everyday use — at full scale, safely and consistently, holding up when you depend on it.</p>
+          </div>
         </div>
       </div>
     </div>
