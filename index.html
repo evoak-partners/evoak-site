@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Evoak Partners — AI strategy, design & implementation</title>
+<title>Evoak Partners - AI strategy, design & implementation</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
@@ -78,6 +78,19 @@
   .get .txt{flex:1;}
   .get h3{font-family:"Newsreader",serif;font-weight:500;font-size:clamp(19px,2.1vw,22px);line-height:1.24;color:var(--ink);}
   .get p{font-family:"Sora",sans-serif;font-weight:400;font-size:14.5px;line-height:1.6;color:var(--ink-soft);margin-top:10px;}
+
+  /* ---- What you can buy (offer cards) ---- */
+  .offers{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:34px;}
+  .offer{display:flex;flex-direction:column;padding:26px 26px 22px;background:var(--paper-2);border:1px solid var(--line);border-radius:4px;}
+  .offer .kick{font-family:"Sora",sans-serif;font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--heart);}
+  .offer h3{font-family:"Newsreader",serif;font-weight:500;font-size:clamp(21px,2.3vw,25px);line-height:1.2;color:var(--ink);margin-top:10px;}
+  .offer .sit{font-family:"Newsreader",serif;font-style:italic;font-size:16.5px;line-height:1.45;color:var(--ink);margin-top:10px;}
+  .offer p{font-family:"Sora",sans-serif;font-weight:400;font-size:14px;line-height:1.65;color:var(--ink-soft);margin-top:12px;}
+  .offer .shape{margin-top:auto;padding-top:16px;font-family:"Sora",sans-serif;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--heart);}
+  .prod{margin-top:40px;padding:26px 28px 24px;background:var(--heart-tint);border-left:3px solid var(--heart);max-width:900px;}
+  .prod h3{font-family:"Newsreader",serif;font-weight:500;font-size:clamp(20px,2.4vw,25px);line-height:1.25;color:var(--ink);margin-top:10px;}
+  .prod p{font-family:"Sora",sans-serif;font-size:14.5px;line-height:1.7;color:var(--ink-soft);margin-top:12px;}
+  .runs{margin-top:30px;max-width:740px;font-family:"Newsreader",serif;font-weight:500;font-size:clamp(16px,1.9vw,19px);line-height:1.5;color:var(--ink);}
 
   /* ---- POV ---- */
   .pov .wrap{padding-top:72px;padding-bottom:74px;}
@@ -195,6 +208,7 @@
     .nav .navlink{display:none;}
     .hero{padding:64px 0 56px;}
     .stages{grid-template-columns:1fr;gap:22px;}
+    .offers{grid-template-columns:1fr;}
     .gets{grid-template-columns:1fr;gap:24px;}
     .flow{flex-direction:column;gap:18px;}
     .step{text-align:left;padding:0;}
@@ -230,9 +244,10 @@
         <div class="descriptor">AI strategy, design<br>&amp; implementation</div>
       </div>
       <nav class="nav">
+        <a class="navlink" href="#offerings">Offerings</a>
         <a class="navlink" href="#pov">Point of view</a>
         <a class="navlink" href="#build">What we do</a>
-        <a class="navlink" href="#founder">Who we are</a>
+        <a class="navlink" href="about.html">About</a>
         <a class="navcta" href="mailto:hello@evoak.co">Get in touch</a>
       </nav>
     </div>
@@ -242,9 +257,10 @@
   <main class="hero">
     <div class="wrap">
       <div class="hero-inner">
-        <h1>We help mid-sized businesses <em>thrive</em> in the age of AI.</h1>
-        <p class="lead">Draw out the strengths you have and build the ones you don't.</p>
-        <a class="cta" href="mailto:hello@evoak.co?subject=AI%20Opportunity%20Audit">Start with an audit <span class="ar">&rarr;</span></a>
+        <h1>We help mid-sized businesses <em>make sense of AI.</em></h1>
+        <p class="lead">Then we build what matters most, and keep the momentum going toward your goals.</p>
+        <p class="body">Draw out the strengths you have and build the ones you don't.</p>
+        <a class="cta" href="mailto:hello@evoak.co?subject=Let%27s%20talk">Start with a conversation <span class="ar">&rarr;</span></a>
       </div>
     </div>
   </main>
@@ -257,21 +273,21 @@
           <span class="ic"><svg width="40" height="40" viewBox="0 0 32 32"><circle cx="14" cy="14" r="8.5"/><line x1="20.5" y1="20.5" x2="27" y2="27"/></svg></span>
           <div class="txt">
             <h3>Make sense of AI.</h3>
-            <p>See what it actually means for your business — what's real, what's hype, and what's worth doing.</p>
+            <p>See what it actually means for your business - what's real, what's hype, and what's worth doing.</p>
           </div>
         </div>
         <div class="get">
           <span class="ic"><svg width="40" height="40" viewBox="0 0 32 32"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="5.5"/><circle cx="16" cy="16" r="1.6" fill="currentColor" stroke="none"/></svg></span>
           <div class="txt">
-            <h3>Put it to work on what your business needs.</h3>
-            <p>Start from the problem you're solving, not the technology, and build to it — whatever the tech turns out to be.</p>
+            <h3>Build what matters most.</h3>
+            <p>Start from the problem, not the technology. Take the swing that changes something for the business, and build it so it holds up when you depend on it.</p>
           </div>
         </div>
         <div class="get">
           <span class="ic"><svg width="40" height="40" viewBox="0 0 32 32"><line x1="5" y1="26" x2="27" y2="26"/><line x1="10" y1="26" x2="10" y2="20"/><line x1="16" y1="26" x2="16" y2="14"/><line x1="22" y1="26" x2="22" y2="8"/></svg></span>
           <div class="txt">
-            <h3>Get it out of the demo and running for real.</h3>
-            <p>Past the pilot and into everyday use — at full scale, safely and consistently, holding up when you depend on it.</p>
+            <h3>Keep the momentum going.</h3>
+            <p>Past the first win and into everyday use: a plan you reprioritize every month, systems that keep running, and the next move already in view.</p>
           </div>
         </div>
       </div>
@@ -283,7 +299,7 @@
     <div class="wrap">
       <span class="eyebrow">The point of view</span>
       <p class="pov-lead" style="margin-top:14px;">The technology is ready. Most companies <em>aren't.</em></p>
-      <p class="pov-turn">Waiting doesn't work. Neither does trying a little of everything. Pick where to move, and move soon — even if the first move is small.</p>
+      <p class="pov-turn">Waiting doesn't work. Neither does trying a little of everything. Pick where to move, and move soon - even if the first move is small.</p>
       <a class="pov-link" href="point-of-view.html">Read the full point of view <span class="ar">&rarr;</span></a>
     </div>
   </section>
@@ -292,16 +308,61 @@
   <section class="band alt">
     <div class="wrap who-inner">
       <span class="eyebrow">Who we work with</span>
-      <p>Our clients are typically <b>$5M+ in revenue with 25+ employees, in an established, non-tech industry.</b> Some are owner-led; others have full leadership teams. They might be looking for their next engine of growth, getting the business in its best shape before they sell, or reinventing themselves entirely.</p>
-      <p class="who-close">One thing ties them together: they believe the fundamentals of leadership haven't changed — only how you apply them.</p>
+      <p><b>Established companies where the work is real, the data is messy, and the people are busy.</b> Usually it looks like one of these. The owner has been told to "do something with AI" and doesn't know where to start. A leader has a list of things to automate and nobody to build them. A team built something useful and now needs it to run properly. A division inside a larger company has a mandate and a budget and needs a partner who delivers, not a deck. If you can make the call, we can help.</p>
+      <p>Startups and very small businesses usually need something different from what we do. We're glad to talk, and we'll tell you if that's the case.</p>
+      <p class="who-close">One thing ties them together: they believe the fundamentals of leadership haven't changed - only how you apply them.</p>
     </div>
   </section>
+
+  <!-- What you can buy -->
+  <section class="band" id="offerings">
+    <div class="wrap">
+      <span class="eyebrow">Offerings</span>
+      <h2 class="s-head">Four ways to work with us. Each one <em>stands on its own.</em></h2>
+      <div class="offers">
+        <div class="offer">
+          <h3>AI Opportunity Audit</h3>
+          <div class="sit">You don't know where AI pays off in your business, or you have a list and no way to rank it.</div>
+          <p>Two weeks. One sheet: every opportunity worth doing, with the investment, the feasibility, the return, and what it takes to keep it running. What to do first, and what to skip.</p>
+          <div class="shape">Fixed fee. Credits toward future work.</div>
+        </div>
+        <div class="offer">
+          <h3>Start-to-Finish Build</h3>
+          <div class="sit">You know what you want to address.</div>
+          <p>We design it, build it, put it into use, and hand it over working, measured against the number we agreed on. Automations, agents, the knowledge underneath them, the integrations. It runs in production, not as a demo. You own it.</p>
+          <div class="shape">Fixed scope. Fixed fee.</div>
+        </div>
+        <div class="offer">
+          <h3>Embedded AI Team</h3>
+          <div class="sit">You want the capability in your business, not a project.</div>
+          <p>A senior partner in your leadership meetings and on site every week, with build capacity underneath and a plan on a page you reprioritize monthly. We work the whole list with you, big and small, at whatever stage you're in: finding what's worth doing, building it, running it, or overseeing what others build for you.</p>
+          <div class="shape">Monthly. Month to month.</div>
+        </div>
+        <div class="offer">
+          <h3>AI at Work</h3>
+          <div class="sit">You want your people using AI every day, properly.</div>
+          <p>Whichever tools you use (Claude, Copilot, ChatGPT, Gemini), rolled out team by team on the work that matters, a company brain underneath so what people learn builds up, and the governance IT needs to say yes.</p>
+          <div class="shape">Monthly program.</div>
+        </div>
+      </div>
+
+      <div class="prod">
+        <span class="eyebrow">From demo to production</span>
+        <h3>Getting it built is half the work. Getting it into production and keeping it there is the rest.</h3>
+        <p>More and more, the answer to "which software should we buy" is "let's just build it." Then the part the subscription used to cover shows up. Every custom application and agent needs the same things before it can run in your business: a security review, fixes to meet the standard, hosting, monitoring, updates, and proof for your auditor, your insurer or your customers. That work usually lands on IT, or doesn't get done, and the project stalls.</p>
+        <p>We do all of it, and if you want, we can host and run the application for you, so none of it lands on your team. Whether your people built it, a vendor built it, or we did, you get it back running, secure and supported, and it looks and feels like any other software you buy.</p>
+      </div>
+
+      <p class="runs">It starts with a conversation. Every engagement is the same three moves: find where AI pays off, build what matters most, keep the momentum going. You decide how much we do and how much your team does, and handing off is as clean as staying.</p>
+    </div>
+  </section>
+
 
   <!-- How we work -->
   <section class="band">
     <div class="wrap">
       <span class="eyebrow">How we work</span>
-      <h2 class="s-head">Strategy, design, and implementation — focused where AI <em>actually pays off.</em></h2>
+      <h2 class="s-head">Strategy, design, and implementation - focused where AI <em>actually pays off.</em></h2>
       <div class="stages">
         <div class="stage">
           <div class="st-n">Strategy</div>
@@ -361,7 +422,7 @@
 
           <div class="cap" style="margin-top:30px;">
             <div class="cap-n">How much we hold</div>
-            <div class="cap-h">You decide — and you're never locked in.</div>
+            <div class="cap-h">You decide - and you're never locked in.</div>
             <div class="holds">
               <div class="hold"><div class="hn">We run it</div><div class="hd">End to end, for you.</div></div>
               <div class="hold"><div class="hn">We run it with you</div><div class="hd">Side by side with your team.</div></div>
@@ -379,7 +440,7 @@
     <div class="wrap">
       <span class="eyebrow">What we do</span>
       <h2 class="s-head">A few of the things we build for businesses like yours.</h2>
-      <p class="s-body" style="margin-top:14px;">These are examples of the kinds of things we build. Every business is different — so open the ones that sound like yours.</p>
+      <p class="s-body" style="margin-top:14px;">These are examples of the kinds of things we build. Every business is different - so open the ones that sound like yours.</p>
       <div class="build-list">
 
         <details class="bl">
@@ -391,7 +452,7 @@
               <ul>
                 <li>Find anything across your records, documents, and finished work in seconds.</li>
                 <li>Capture what your most experienced people know, before it leaves with them.</li>
-                <li>Bring new hires to speed in weeks, not years — and put that expertise to work as an agent your team can lean on.</li>
+                <li>Bring new hires to speed in weeks, not years - and put that expertise to work as an agent your team can lean on.</li>
               </ul>
             </div>
             <div class="cap">
@@ -403,19 +464,19 @@
                 <li>Build the foundation your whole business, and everything you build next, runs on.</li>
               </ul>
             </div>
-            <div class="vig">Your best estimator has spent twenty-five years learning which jobs are worth bidding and which ones quietly bleed you dry. He retires in the spring. We capture how he thinks — the rules of thumb, the red flags, the instincts he can't quite put into words — into a system your whole team works from. <b>The estimator who takes his chair is bidding like a veteran in her first month, and the judgment that used to live in one man's head now answers to anyone who needs it.</b></div>
+            <div class="vig">Your best estimator has spent twenty-five years learning which jobs are worth bidding and which ones quietly bleed you dry. He retires in the spring. We capture how he thinks - the rules of thumb, the red flags, the instincts he can't quite put into words - into a system your whole team works from. <b>The estimator who takes his chair is bidding like a veteran in her first month, and the judgment that used to live in one man's head now answers to anyone who needs it.</b></div>
           </div>
         </details>
 
         <details class="bl">
-          <summary><span class="bl-t">See what's coming — risk and opportunity</span><span class="bl-hint">See how<span class="chev">&rsaquo;</span></span></summary>
+          <summary><span class="bl-t">See what's coming - risk and opportunity</span><span class="bl-hint">See how<span class="chev">&rsaquo;</span></span></summary>
           <div class="bl-body">
             <div class="cap">
               <div class="cap-n">Surveillance</div>
               <div class="cap-h">Never miss the risk or the change that matters.</div>
               <ul>
-                <li>Keep watch on what's shifting around you — regulations, markets, and the windows that move your business.</li>
-                <li>Monitor the health of every account and exposure, continuously — catch the customer sliding toward trouble before it costs you.</li>
+                <li>Keep watch on what's shifting around you - regulations, markets, and the windows that move your business.</li>
+                <li>Monitor the health of every account and exposure, continuously - catch the customer sliding toward trouble before it costs you.</li>
                 <li>Build a living watch that learns your priorities and surfaces only what needs you, while there's still time to act.</li>
               </ul>
             </div>
@@ -425,21 +486,21 @@
               <ul>
                 <li>Surface the upsell and cross-sell already sitting in your customer base.</li>
                 <li>Target the prospects that look just like your most profitable clients.</li>
-                <li>Expand revenue account by account — and spot the firms worth acquiring to grow faster.</li>
+                <li>Expand revenue account by account - and spot the firms worth acquiring to grow faster.</li>
               </ul>
             </div>
-            <div class="vig">You carry four hundred customers on terms, and somewhere in them two or three are quietly sliding toward trouble — paying slower, stretching their limits, leaning on you harder than they used to. Today it surfaces in a monthly report, after the exposure is already there. <b>We build the watch that never blinks: it tracks the health of every account continuously and flags the ones turning before they cost you, while you still have room to act.</b></div>
+            <div class="vig">You carry four hundred customers on terms, and somewhere in them two or three are quietly sliding toward trouble - paying slower, stretching their limits, leaning on you harder than they used to. Today it surfaces in a monthly report, after the exposure is already there. <b>We build the watch that never blinks: it tracks the health of every account continuously and flags the ones turning before they cost you, while you still have room to act.</b></div>
           </div>
         </details>
 
         <details class="bl">
-          <summary><span class="bl-t">Get more done — without adding headcount</span><span class="bl-hint">See how<span class="chev">&rsaquo;</span></span></summary>
+          <summary><span class="bl-t">Get more done - without adding headcount</span><span class="bl-hint">See how<span class="chev">&rsaquo;</span></span></summary>
           <div class="bl-body">
             <div class="cap">
               <div class="cap-n">Agentic Process Automation</div>
               <div class="cap-h">Put agents on the repetitive, structured work.</div>
               <ul>
-                <li>Hand off a defined, repeatable process end to end — RFPs into priced proposals, field data structured the moment crews leave the site.</li>
+                <li>Hand off a defined, repeatable process end to end - RFPs into priced proposals, field data structured the moment crews leave the site.</li>
                 <li>Run it at a volume that would never be worth hiring for.</li>
                 <li>Free your people from the rote work for the judgment only they can bring.</li>
               </ul>
@@ -453,12 +514,12 @@
                 <li>Agents that own a job end to end, taking on work you could never hire for.</li>
               </ul>
             </div>
-            <div class="vig">Every new project that comes in needs groundwork before your experts can dig in — the background pulled together, the relevant history surfaced, what matters and what's missing laid out. Nobody has the hours, so your senior people do it themselves or it gets done halfway. We give you a team of agents that owns that groundwork: for every project, they figure out what's relevant and have it worked up and waiting. <b>Your experts walk in already briefed, and you take on more than your headcount should allow.</b></div>
+            <div class="vig">Every new project that comes in needs groundwork before your experts can dig in - the background pulled together, the relevant history surfaced, what matters and what's missing laid out. Nobody has the hours, so your senior people do it themselves or it gets done halfway. We give you a team of agents that owns that groundwork: for every project, they figure out what's relevant and have it worked up and waiting. <b>Your experts walk in already briefed, and you take on more than your headcount should allow.</b></div>
           </div>
         </details>
 
         <details class="bl">
-          <summary><span class="bl-t">Stay compliant — and prove it</span><span class="bl-hint">See how<span class="chev">&rsaquo;</span></span></summary>
+          <summary><span class="bl-t">Stay compliant - and prove it</span><span class="bl-hint">See how<span class="chev">&rsaquo;</span></span></summary>
           <div class="bl-body">
             <div class="cap">
               <div class="cap-n">Compliance &amp; Assurance</div>
@@ -466,10 +527,10 @@
               <ul>
                 <li>Generate and submit mandated filings and reports straight from your operating data.</li>
                 <li>Track which rules apply and where you conform, across every site and job.</li>
-                <li>Produce the proof whenever someone asks — and know early what applies, so you can go after work you'd otherwise pass up.</li>
+                <li>Produce the proof whenever someone asks - and know early what applies, so you can go after work you'd otherwise pass up.</li>
               </ul>
             </div>
-            <div class="vig">Every site you run owes paperwork to somebody, and one missed filing is a fine — or a shutdown. We build the system that produces those filings from your own data, knows which rules apply where, and keeps the proof ready the moment anyone asks. <b>Six months on, you're bidding a job two states over while your competitors are still reading the regulations to see if they're allowed.</b></div>
+            <div class="vig">Every site you run owes paperwork to somebody, and one missed filing is a fine - or a shutdown. We build the system that produces those filings from your own data, knows which rules apply where, and keeps the proof ready the moment anyone asks. <b>Six months on, you're bidding a job two states over while your competitors are still reading the regulations to see if they're allowed.</b></div>
           </div>
         </details>
 
@@ -477,24 +538,6 @@
     </div>
   </section>
 
-  <!-- Who we are — founder proof -->
-  <section class="band" id="founder">
-    <div class="wrap">
-      <span class="eyebrow">Who you're working with</span>
-      <div class="founder-grid">
-        <a class="portrait" href="https://www.linkedin.com/in/jtrevorfoster/" target="_blank" rel="noopener" aria-label="Trevor Foster on LinkedIn">
-          <img src="trevor-foster.jpeg" alt="Trevor Foster">
-          <span class="li">in · LinkedIn</span>
-        </a>
-        <div class="founder-body">
-          <h3>Evoak is led by Trevor Foster.</h3>
-          <p>A former venture-backed technology CEO and finance-and-operations executive, Trevor has built and shipped the kind of AI systems most consultants only talk about — <b>including agentic platforms running at Fortune 1000 scale.</b></p>
-          <p>Today he works with owner-led companies in established, hands-on industries, helping them decide where AI genuinely pays off — and, just as often, where to skip it.</p>
-          <p class="founder-note">Every engagement starts with a conversation with Trevor. The first one is no charge.</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Start -->
   <section class="band alt" id="start">
@@ -502,10 +545,10 @@
       <div class="startbox">
         <div class="st-c">
           <span class="eyebrow">Where to start</span>
-          <h3>An AI Opportunity Audit.</h3>
-          <p>In a few weeks, you'll know where AI pays off in your business, what it's worth, and what to do first. Fixed fee, and it counts toward the work if you go ahead.</p>
+          <h3>A conversation about what has to go right this year.</h3>
+          <p>If the opportunity is already clear, we get to work. If it isn't, a two-week AI Opportunity Audit finds where AI pays off in your business, what it's worth, and what to do first. Fixed fee, and it counts toward the work if you go ahead.</p>
         </div>
-        <a class="startcta" href="mailto:hello@evoak.co?subject=AI%20Opportunity%20Audit">Get in touch <span>&rarr;</span></a>
+        <a class="startcta" href="mailto:hello@evoak.co?subject=Let%27s%20talk">Get in touch <span>&rarr;</span></a>
       </div>
     </div>
   </section>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Evoak Partners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#17211C;
+    --ink-soft:#3A453E;
+    --ink-faint:#808A82;
+    --heart:#2F5D4A;
+    --heart-soft:#7A9B8B;
+    --oak:#A6702F;
+    --paper:#F3F1E9;
+    --paper-2:#FAF8F2;
+    --line:#D8D3C6;
+    --heart-tint:#E4EAE4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{background:var(--paper);color:var(--ink);font-family:"Newsreader",Georgia,serif;line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 40px;}
+  .col{max-width:680px;margin:0 auto;}
+  .eyebrow{font-family:"Sora",sans-serif;font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--heart);}
+
+  /* header */
+  .site{position:sticky;top:0;z-index:10;background:rgba(243,241,233,.88);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line);}
+  .site .wrap{display:flex;align-items:center;gap:20px;height:72px;}
+  .lockup{display:flex;align-items:center;gap:11px;text-decoration:none;}
+  .mark{width:30px;height:30px;flex:0 0 30px;}
+  .lock-text{display:flex;flex-direction:column;justify-content:center;}
+  .wordmark{font-family:"Sora",sans-serif;font-weight:800;font-size:20px;letter-spacing:-.01em;color:var(--ink);line-height:1;}
+  .sub{font-family:"Sora",sans-serif;font-weight:500;font-size:8px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px;}
+  .nav{margin-left:auto;display:flex;align-items:center;gap:26px;}
+  .nav a{font-family:"Sora",sans-serif;font-size:12.5px;font-weight:500;letter-spacing:.02em;color:var(--ink-soft);text-decoration:none;transition:color .15s;}
+  .nav a:hover{color:var(--ink);}
+  .nav .navcta{padding:8px 16px;border:1px solid var(--ink);border-radius:2px;color:var(--ink);}
+  .nav .navcta:hover{background:var(--ink);color:var(--paper-2);}
+
+  /* article */
+  .art{padding:80px 0 40px;}
+  .back{font-family:"Sora",sans-serif;font-size:12px;font-weight:500;color:var(--heart);text-decoration:none;}
+  .back:hover{color:var(--ink);}
+  h1{font-family:"Newsreader",serif;font-weight:500;font-size:clamp(32px,5vw,50px);line-height:1.12;letter-spacing:-.015em;color:var(--ink);margin-top:14px;}
+  h1 em{font-style:italic;color:var(--heart);}
+  .standfirst{font-family:"Newsreader",serif;font-weight:400;font-size:clamp(18px,2.3vw,22px);line-height:1.5;color:var(--ink-soft);margin-top:24px;padding-top:24px;border-top:2px solid var(--heart);}
+
+  .body-copy{padding:12px 0 20px;}
+  .body-copy h2{font-family:"Newsreader",serif;font-weight:500;font-size:clamp(22px,2.8vw,28px);line-height:1.25;color:var(--ink);margin-top:48px;}
+  .body-copy p{font-family:"Newsreader",serif;font-weight:400;font-size:18.5px;line-height:1.72;color:var(--ink-soft);margin-top:18px;}
+  .body-copy p strong{color:var(--ink);font-weight:600;}
+  .pull{font-family:"Newsreader",serif;font-style:italic;font-weight:500;font-size:clamp(21px,2.8vw,27px);line-height:1.32;color:var(--heart);margin:40px 0;padding-left:22px;border-left:3px solid var(--heart);}
+
+  .end-cta{margin:56px 0 20px;background:var(--ink);border-radius:6px;padding:34px 36px;display:flex;align-items:center;gap:28px;}
+  .end-cta .c{flex:1;}
+  .end-cta .eyebrow{color:var(--heart-soft);}
+  .end-cta h3{font-family:"Newsreader",serif;font-weight:500;font-size:clamp(20px,2.5vw,26px);color:var(--paper-2);margin:8px 0 9px;}
+  .end-cta p{font-family:"Sora",sans-serif;font-size:13px;line-height:1.6;color:#C3C9C2;max-width:440px;}
+  .end-cta a.arrow{font-family:"Sora",sans-serif;font-weight:600;font-size:13px;color:var(--ink);background:var(--heart-soft);padding:11px 18px;border-radius:3px;text-decoration:none;white-space:nowrap;}
+  .end-cta a.arrow:hover{background:#8FB3A2;}
+
+  /* footer */
+  .foot{border-top:1px solid var(--line);}
+  .foot .wrap{padding-top:24px;padding-bottom:32px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+  .foot .manifesto{font-family:"Newsreader",serif;font-style:italic;font-size:14px;color:var(--ink);}
+  .foot .manifesto b{font-style:normal;font-family:"Sora",sans-serif;font-weight:700;font-size:12.5px;}
+  .foot .contact{font-family:"Sora",sans-serif;font-size:11px;letter-spacing:.04em;color:var(--ink-faint);text-align:right;}
+
+  @media (max-width:680px){
+    .wrap{padding:0 22px;}
+    .nav .navlink{display:none;}
+    .nav{gap:14px;}
+    .art{padding:52px 0 30px;}
+    .end-cta{flex-direction:column;align-items:flex-start;gap:16px;padding:26px 24px;}
+    .foot .wrap{flex-direction:column;align-items:flex-start;}
+    .foot .contact{text-align:left;}
+  }
+</style>
+</head>
+<body>
+
+  <header class="site">
+    <div class="wrap">
+      <a class="lockup" href="index.html" aria-label="Evoak Partners — home">
+        <svg class="mark" viewBox="0 0 100 100">
+          <rect x="3" y="3" width="94" height="94" rx="26" fill="#17211C"/>
+          <path d="M20 64 L52 24 L66 24 L34 64 Z" fill="#F3F1E9"/>
+          <path d="M44 76 L76 36 L90 36 L58 76 Z" fill="#F3F1E9"/>
+        </svg>
+        <div class="lock-text">
+          <div class="wordmark">Evoak</div>
+          <div class="sub">Partners</div>
+        </div>
+      </a>
+      <nav class="nav">
+        <a class="navlink" href="index.html#offerings">Offerings</a>
+        <a class="navlink" href="index.html#build">What we do</a>
+        <a class="navlink" href="about.html">About</a>
+        <a class="navcta" href="mailto:hello@evoak.co">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="art">
+    <div class="wrap">
+      <div class="col">
+        <a class="back" href="index.html">&larr; Evoak Partners</a>
+        <span class="eyebrow" style="display:block;margin-top:26px;">About</span>
+        <h1>We build what we recommend, <em>and we run our own firm on it.</em></h1>
+        <p class="standfirst">Evoak Partners is an AI strategy, design and implementation firm in Carmel, Indiana. We help mid-sized businesses make sense of AI, build what matters most, and keep the momentum going toward their goals.</p>
+
+        <div class="body-copy">
+
+          <h2>Who you're working with</h2>
+          <div style="display:grid;grid-template-columns:120px 1fr;gap:26px;align-items:start;margin:18px 0 6px;">
+            <a href="https://www.linkedin.com/in/jtrevorfoster/" target="_blank" rel="noopener" aria-label="Trevor Foster on LinkedIn" style="display:block;">
+              <img src="trevor-foster.jpeg" alt="Trevor Foster" style="width:120px;height:120px;object-fit:cover;border-radius:4px;display:block;">
+              <span style="display:block;margin-top:6px;font-family:'Sora',sans-serif;font-size:11px;color:var(--heart);">in · LinkedIn</span>
+            </a>
+            <div>
+              <p style="margin-top:0;">Trevor Foster founded Evoak after seven years as co-founder and CEO of a venture-backed technology company, where he built AI products and sold them to Fortune 1000 companies in highly regulated domains. Before that, he led finance and innovation at a global compliance services company, helping move the business onto a common operating platform and improve how it used data and processes. He began his career in accounting and process engineering.</p>
+              <p>That experience shapes how Evoak works. We start with the business: how the work gets done, where value is created, and what needs to change. Then we determine where AI can make that change possible, faster, or more valuable.</p>
+              <p>Trevor leads the strategy work with every client and stays involved through implementation. Evoak has worked with companies across technology, professional services, manufacturing, construction, consumer products and financial services in the US and UK.</p>
+              <p>Every engagement starts with a conversation with Trevor. The first one is no charge.</p>
+            </div>
+          </div>
+
+          <h2>How we operate</h2>
+          <p>We have strong opinions about this work, and you should know them before we start.</p>
+
+          <p><b>Strategy first, AI second.</b> We won't tell you to "adopt AI." We find the thing your business should be doing anyway, then work out how AI makes it cheaper, faster, or possible at all. Take the AI out of the plan. If there's nothing left, it wasn't a plan.</p>
+
+          <p><b>Go deep, not wide.</b> Getting everyone using AI is the floor, and we'll help you get there. The advantage comes from one or two big moves on work that matters, finished. Twenty small wins spread across the company leave you busy and even with everyone else.</p>
+
+          <p><b>Own the result.</b> We automate what a job is for, not the steps in it. An automation that produces reports nobody acts on has done nothing. We measure what we build against the number it was supposed to move.</p>
+
+          <p><b>The models are rented. What your business knows is yours.</b> Every company can rent the same AI. What they can't rent is your rules, your history, and your people's judgment. We turn that into an asset your systems run on, and it gets more valuable every month.</p>
+
+          <p><b>Make your experts reach further.</b> The best systems we build don't replace your most experienced people. They give them more reach, and they capture how those people think before it walks out the door.</p>
+
+          <p><b>Everything we build can be seen, controlled, and answered for.</b> Every system we put into production has rules for what it may do, a record of what it did, and evidence you can hand to an auditor, an insurer, or a customer. If it can't explain itself, it doesn't ship.</p>
+
+          <p><b>Say what it is.</b> Plain words. If we can't explain what a system does in one sentence your operations lead would use, we aren't done designing it.</p>
+
+          <p><b>Fix the cause. Fail loudly. Check before claiming.</b> We don't call a shortcut "technical debt." We don't let a system fail quietly. And confidence isn't evidence, ours included.</p>
+
+          <p><b>You own it.</b> Everything we build is yours: the code, the data, the controls, the plan. Handing off is as clean as staying. We stay because it's worth it, not because leaving is hard.</p>
+
+          <p class="pull">We run our own firm on what we sell: the books, the research, the hiring, this website.</p>
+
+          <h2>Where we are</h2>
+          <p>Carmel, Indiana. Most of our clients are within a drive, and we like it that way, because on site every week is how the embedded work gets done. We've also worked with leaders inside larger companies from Indiana to the UK when the work called for it.</p>
+
+        </div>
+
+        <div class="end-cta">
+          <div class="c">
+            <span class="eyebrow">Where to start</span>
+            <h3>A conversation about what has to go right this year.</h3>
+            <p>If the opportunity is clear, we get to work. If it isn't, a two-week AI Opportunity Audit finds where AI pays off, what it's worth, and what to do first.</p>
+          </div>
+          <a class="arrow" href="mailto:hello@evoak.co?subject=Let%27s%20talk">Get in touch &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="manifesto"><b>Evoak Partners.</b> &nbsp;Modernize the work, keep the soul.</div>
+      <div class="contact"><a href="mailto:hello@evoak.co" style="color:var(--heart);text-decoration:none;">hello@evoak.co</a> &nbsp;·&nbsp; evoak.co</div>
+    </div>
+  </footer>
+
+</body>
+</html>
